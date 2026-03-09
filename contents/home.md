@@ -1,20 +1,27 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+### 基本信息
+- **年龄：** 27岁
+- **性别：** 男
+- **地点：** 西安
+- **学历：** 应届博士
+- **电话：** `15137138793`
+- **邮箱：** `1325930068@qq.com`
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+### 教育背景
+- **西安交通大学（直博生）- 苏善民教授组**｜计算机科学与技术（2021.09 - 至今）
+- **西安交通大学（本科生）**｜软件工程（2017.09 - 2021）
 
-#### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+### 个人简介
+- 计算机博士生，长期聚焦多模态大语言模型安全（MLLM Safety）方向，在越狱攻击、对抗样本生成、物理世界攻击与评测基准构建方面开展系统研究。
+- 已在 AAAI、IEEE TIFS、NeurIPS 等 CCF-A 会议/期刊发表多篇论文，多项工作开源复现。
+- 具备从问题抽象、方法设计、系统实现到大规模评测、论文产出的完整研究闭环能力。
 
-#### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+### 专业技能
+- **技能：** Python、PyTorch、CUDA、Linux、Bash
+- **方向：** 多模态大模型安全、越狱攻击（Jailbreak）、对抗样本/贴片、物理攻击、后门攻击、深度伪造防御
+- **模型工具：** Transformers、Diffusers、OpenAI/Gemini API、HuggingFace
+- **英语：** CET-6（530）
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
-
-#### Research Interests  
-XX, XX, XX, XX.
+### 自我评价
+- 坚持“安全驱动可信 AI”的研究理念，兼具理论深度与工程落地能力。
+- 强调可复现、可扩展、可部署的研究范式，重视工具链建设。
+- 善于在跨学校/研究院/企业的合作环境中推进高质量科研产出。
