@@ -110,3 +110,20 @@ section .main-body{
 }
 
 
+
+.main-body p {
+    margin-bottom: 1rem;
+}
+
+.main-body ul, .main-body ol {
+    padding-left: 1.4rem;
+}
+
+.main-body hr {
+    margin: 2rem 0;
+    opacity: 0.15;
+}
+
+.main-body strong {
+    color: #2738b5;
+}
