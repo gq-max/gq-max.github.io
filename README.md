@@ -70,3 +70,13 @@ Fire up a browser and go to `https://<username>.github.io`
 本项目基于 MIT 许可协议，你可以自由使用和修改此模板。 Yixin Huang 2025年2月7号
 
 Copyright Yixin Huang, 2025. Licensed under an MIT license. You can copy and mess with this template.
+
+## 发布与不生效排查（gq-max.github.io）
+如果你修改后网页没有变化，通常是发布链路问题而不是页面代码问题。建议按下面步骤一次性配置：
+
+1. 确保修改提交并推送到 `main` 分支。
+2. 在仓库 `Settings -> Pages` 中把 **Source** 设置为 **GitHub Actions**。
+3. 等待 Actions 中 `Deploy static site to GitHub Pages` 工作流成功。
+4. 强制刷新浏览器缓存（`Ctrl/Cmd + Shift + R`）。
+
+本仓库已内置 `.github/workflows/pages.yml`，会在每次推送到 `main` 后自动部署静态站点。
