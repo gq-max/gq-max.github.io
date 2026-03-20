@@ -4,7 +4,7 @@
 - 参与构建 OmniSafeBench-MM：多模态越狱攻击-防御统一评测基准。
 - 负责多种 jailbreak 攻击算法的实现与集成，统一闭源 API 与开源 VLM 接口。
 - 构建批量推理、自动评测与日志统计工具链，显著提升 benchmark 的可复现性与扩展性。
-- 成果发表于 arXiv：*OmniSafeBench-MM: A Unified Benchmark and Toolbox for Multimodal Jailbreak Attack-Defense Evaluation*（共同一作）。
+- 成果位于 arXiv：*OmniSafeBench-MM: A Unified Benchmark and Toolbox for Multimodal Jailbreak Attack-Defense Evaluation*（共同一作）。
 
 ---
 
@@ -13,12 +13,12 @@
 
 - 研究 MLLM 在自动驾驶场景下的物理世界对抗鲁棒性与安全风险。
 - 提出 PhysPatch，利用大语言模型的空间理解能力和特征对齐损失，实现对 MLLM 自动驾驶系统物理防护部署、跨模型可迁移的对抗贴片攻击。
-- 在多种 MLLM 自动驾驶系统上验证有效性，成果发表于 AAAI 2025（CCF A）。
+- 在多种 MLLM 自动驾驶系统上验证有效性，成果发表于 **AAAI 2026（CCF A）**。
 - 论文：*Physpatch: A physically realizable and transferable adversarial patch attack for multimodal large language models-based autonomous driving systems*。
 
 ---
 
-### **针对 MLLM 的可迁移对抗攻击研究｜IEEE TIFS（中科院一区）**
+### **针对 MLLM 的可迁移对抗攻击研究｜IEEE TIFS（中科院一区，CCF-A）**
 **2023.11 - 2024.10**
 
 - 研究通用 MLLM 的可迁移对抗样本生成方法。
