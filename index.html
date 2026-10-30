@@ -1,153 +1,282 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="郭淇（Qi Guo）｜西安交通大学计算机直博生，研究多模态大模型理解与交互、安全、对抗鲁棒性及 SFT/GRPO 后训练。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="郭淇 · Qi Guo | Multimodal AI Research" />
-    <meta property="og:description" content="Research in Multimodal AI Understanding, Safety, and Post-Training." />
-    <link rel="canonical" href="https://gq-max.github.io/" />
-    <meta name="author" content="Qi Guo" />
-    <meta name="keywords" content="Qi Guo, 郭淇, Multimodal AI, Vision-Language Models, Video MLLM, Human-Centric AI, Adversarial Robustness, AI Safety, SFT, GRPO" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script"
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="author" content="Qi Guo">
+  <meta name="description" content="Qi Guo is a Ph.D. student at Xi'an Jiaotong University researching multimodal AI understanding, model safety, adversarial robustness, and post-training.">
+  <meta name="keywords" content="Qi Guo, 郭淇, Multimodal AI, AI Safety, Video MLLM, VLA, Vision-Language Models, Post-Training, ChainCog-Bench, PhysPatch, AdvDiffVLM">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Qi Guo (郭淇) — Multimodal AI Research">
+  <meta property="og:description" content="Research at the intersection of multimodal understanding, safety, and post-training.">
+  <meta property="og:image" content="https://gq-max.github.io/static/assets/img/photo.png">
+  <meta property="og:url" content="https://gq-max.github.io/">
+  <link rel="canonical" href="https://gq-max.github.io/">
+  <link rel="icon" href="static/assets/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/academic.css">
+  <script src="static/js/academic.js" defer></script>
+  <title>Qi Guo (郭淇) — Multimodal AI Research</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Qi Guo","alternateName":"郭淇","url":"https://gq-max.github.io/","image":"https://gq-max.github.io/static/assets/img/photo.png","email":"mailto:gq19990314@stu.xjtu.edu.cn","affiliation":{"@type":"CollegeOrUniversity","name":"Xi'an Jiaotong University"},"sameAs":["https://github.com/gq-max/"],"knowsAbout":["Multimodal AI","AI Safety","Vision-Language Models","Video Understanding","Adversarial Robustness","Post-Training"]}
+  </script>
 </head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to content</a>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-<li class="nav-item"><a class="nav-link me-lg-3" href="#home">ABOUT</a></li>
-<li class="nav-item"><a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a></li>
-<li class="nav-item"><a class="nav-link me-lg-3" href="#projects">PROJECTS</a></li>
-<li class="nav-item"><a class="nav-link me-lg-3" href="#experience">EXPERIENCE</a></li>
-<li class="nav-item"><a class="nav-link me-lg-3" href="#awards">AWARDS</a></li>
-</ul>
-            </div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Qi Guo homepage">
+        <span class="brand-emblem" aria-hidden="true">Q<span>.</span></span>
+        <span class="brand-title">Qi Guo <span class="brand-chinese">郭淇</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#research" data-i18n="navResearch">Research</a>
+        <a href="#publications" data-i18n="navPublications">Publications</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Website language">
+          <button class="lang-btn is-active" type="button" data-set-lang="en" aria-pressed="true" lang="en">EN</button>
+          <span class="lang-divider" aria-hidden="true"></span>
+          <button class="lang-btn" type="button" data-set-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
         </div>
-    </nav>
-
-    <!-- Top Section -->
-    <section class="top-section">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="display-4 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png" alt="Qi Guo profile photo" />
-        </div>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <!-- Photo -->
+  </header>
 
-    <!-- About -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home"><div class="container px-5"><header><h2 id="home-subtitle">ABOUT / 关于我</h2></header><div class="main-body" id="home-md"></div></div></section>
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications"><div class="container px-5"><header><h2><i class="bi bi-journal-text"></i> PUBLICATIONS / 论文成果</h2></header><div class="main-body" id="publications-md"></div></div></section>
-    <!-- Projects -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="projects"><div class="container px-5"><header><h2><i class="bi bi-diagram-3"></i> RESEARCH / 研究项目</h2></header><div class="main-body" id="projects-md"></div></div></section>
-    <!-- Experience -->
-    <section class="bg-gradient-primary-to-secondary-dark mt5 md5" id="experience"><div class="container px-5"><header><h2><i class="bi bi-building"></i> EXPERIENCE / 实习经历</h2></header><div class="main-body" id="experience-md"></div></div></section>
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards"><div class="container px-5"><header><h2><i class="bi bi-trophy"></i> AWARDS / 荣誉奖励</h2></header><div class="main-body" id="awards-md"></div></div></section>
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-3"></div>
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                    <a id="github-link" href="https://github.com/gq-max" class="d-flex align-items-center gap-2">
-                        <i class="bi bi-github"></i> GitHub
-                    </a>
-                    <span class="text-muted">|</span>
-                    <a id="license-link" href="https://github.com/gq-max/gq-max.github.io/blob/main/LICENSE">
-                        <i class="bi bi-shield-check me-1"></i>License
-                    </a>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="heroEyebrow">Ph.D. Student at Xi'an Jiaotong University</span></div>
+          <h1 id="hero-title"><span class="hero-name">Qi Guo <span class="name-cn">郭淇</span></span><span class="hero-statement" data-i18n="heroStatement">Exploring how multimodal AI understands the world—and how to make it more reliable.</span></h1>
+          <p class="hero-description" data-i18n="heroDescription">My research spans human-centric visual understanding, transferable adversarial attacks on vision-language and video models, and multimodal post-training. I am a direct-entry Ph.D. student in Computer Science at Xi'an Jiaotong University, advised by Prof. Shanmin Pang.</p>
+          <div class="focus-tags" aria-label="Research areas">
+            <span data-i18n="tagUnderstanding">Multimodal Understanding</span>
+            <span data-i18n="tagSafety">AI Safety &amp; Robustness</span>
+            <span data-i18n="tagTraining">SFT / GRPO Post-Training</span>
+          </div>
+          <div class="hero-ctas">
+            <a class="button button-primary" href="#publications"><span data-i18n="ctaPapers">Explore publications</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="mailto:gq19990314@stu.xjtu.edu.cn"><span data-i18n="ctaConnect">Get in touch</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/gq-max/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.3-1.23-1.65-1.23-1.65-1.01-.68.08-.66.08-.66 1.12.08 1.71 1.15 1.71 1.15 1 .1.65 2.44 2.45 1.54.1-.72.4-1.2.72-1.48-2.48-.28-5.08-1.24-5.08-5.53 0-1.22.43-2.22 1.15-3-.11-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.75 10.75 0 0 1 5.61 0c2.14-1.45 3.07-1.15 3.07-1.15.61 1.54.23 2.68.12 2.96.72.78 1.14 1.78 1.14 3 0 4.3-2.6 5.25-5.09 5.52.41.36.77 1.06.77 2.14v3.17c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <span class="social-separator" aria-hidden="true"></span>
+            <a href="mailto:gq19990314@stu.xjtu.edu.cn">Email <span aria-hidden="true">↗</span></a>
+            <span class="social-separator" aria-hidden="true"></span>
+            <span data-i18n="heroGraduation">Expected Ph.D. graduation: 2027</span>
+          </div>
         </div>
-    </footer>
 
+        <aside class="portrait-panel" aria-label="Portrait of Qi Guo">
+          <div class="portrait-decoration portrait-decoration-top" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="static/assets/img/photo.png" alt="Portrait of Qi Guo" width="480" height="600" fetchpriority="high">
+          </div>
+          <div class="portrait-caption">
+            <div class="caption-person"><strong>Qi Guo / 郭淇</strong><span data-i18n="portraitCaption">Multimodal AI Researcher</span></div>
+            <span class="caption-school">XJTU<span class="caption-dot">.</span></span>
+          </div>
+          <div class="portrait-decoration portrait-decoration-bottom" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="research-strip" aria-label="Research highlights">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label" data-i18n="stripFocus">RESEARCH</span><strong>MLLM · VLA · Video AI</strong></div>
+        <div class="strip-rule" aria-hidden="true"></div>
+        <div class="strip-item"><span class="strip-label" data-i18n="stripVenues">SELECTED VENUES</span><strong>AAAI · IEEE TIFS · IEEE TDSC</strong></div>
+        <div class="strip-rule" aria-hidden="true"></div>
+        <div class="strip-item"><span class="strip-label" data-i18n="stripMethods">METHODS</span><strong>QLoRA · SFT · GRPO</strong></div>
+      </div>
+    </div>
+
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">01 / <span data-i18n="researchKicker">RESEARCH</span></span><h2 id="research-title" data-i18n="researchTitle">Research interests<span class="headline-period">.</span></h2></div>
+          <p class="section-intro" data-i18n="researchIntro">I study multimodal intelligence from three complementary perspectives: understanding, reliability, and model adaptation.</p>
+        </div>
+        <div class="research-cards">
+          <article class="research-card">
+            <div class="research-card-top"><span class="research-glyph" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="7" y="8" width="34" height="32" rx="7" stroke="currentColor" stroke-width="1.6"/><path d="M13 27c5-8 17-8 22 0-5 8-17 8-22 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="24" cy="27" r="3.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="research-number">01</span></div>
+            <h3 data-i18n="research1Title">Human-centric multimodal understanding</h3>
+            <p data-i18n="research1Desc">Understanding human behavior, visual evidence, and temporal dynamics in images and videos; building benchmarks that reveal where MLLMs fail to reason.</p>
+            <div class="research-keywords">Visual reasoning <span>·</span> Video understanding</div>
+          </article>
+          <article class="research-card">
+            <div class="research-card-top"><span class="research-glyph" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="m24 5 16 7v11c0 10-6 17-16 20C14 40 8 33 8 23V12l16-7Z" stroke="currentColor" stroke-width="1.6"/><path d="m17 24 5 5 10-11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="research-number">02</span></div>
+            <h3 data-i18n="research2Title">Multimodal safety &amp; adversarial robustness</h3>
+            <p data-i18n="research2Desc">Studying transferable attacks, physical patches, and jailbreak evaluations across VLMs, video MLLMs, and vision-language-action models.</p>
+            <div class="research-keywords">Transferability <span>·</span> Physical robustness</div>
+          </article>
+          <article class="research-card">
+            <div class="research-card-top"><span class="research-glyph" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="13" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="35" cy="24" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="13" cy="36" r="5" stroke="currentColor" stroke-width="1.6"/><path d="m18 14 12 8M18 34l12-8" stroke="currentColor" stroke-width="1.6"/><path d="M13 17v14" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 3"/></svg></span><span class="research-number">03</span></div>
+            <h3 data-i18n="research3Title">Efficient post-training &amp; evaluation</h3>
+            <p data-i18n="research3Desc">Adapting multimodal models through QLoRA, supervised fine-tuning, and GRPO; designing targeted data, rewards, and safety–utility evaluations.</p>
+            <div class="research-keywords">QLoRA <span>·</span> SFT <span>·</span> GRPO</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">02 / <span data-i18n="publicationsKicker">PUBLICATIONS</span></span><h2 id="publications-title" data-i18n="publicationsTitle">Selected publications<span class="headline-period">.</span></h2></div>
+          <p class="section-intro" data-i18n="publicationsIntro">A selection of peer-reviewed work on multimodal safety, adversarial transferability, and efficient generation.</p>
+        </div>
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="paper-thumbnail visual-physical" aria-hidden="true"><span class="visual-top">MULTIMODAL / SAFETY</span><div class="visual-central"><div class="visual-ring"></div><div class="visual-ring second"></div><div class="visual-point"></div></div><span class="visual-bottom">PHYSICAL · PATCH</span></div>
+            <div class="paper-details">
+              <div class="paper-meta"><span class="paper-venue">AAAI 2026</span><span class="paper-contribution" data-i18n="firstAuthor">First author</span></div>
+              <h3>PhysPatch: A Physically Realizable and Transferable Adversarial Patch Attack for Multimodal Large Language Models-based Autonomous Driving Systems</h3>
+              <p class="paper-authors"><strong>Qi Guo</strong>, Xiaojun Jia, Shanmin Pang, Simeng Qin, Lin Wang, Ju Jia, Yang Liu, Qing Guo.</p>
+              <p class="paper-summary" data-i18n="paperPhysDesc">A physically deployable adversarial patch for evaluating the cross-model robustness of driving-oriented multimodal language models.</p>
+              <div class="paper-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/42439" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://arxiv.org/abs/2508.05167" target="_blank" rel="noopener noreferrer">arXiv ↗</a><a href="https://github.com/gq-max/physpatch" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="paper-thumbnail visual-vla" aria-hidden="true"><span class="visual-top">VISION / ACTION</span><div class="visual-central"><div class="visual-track"></div><div class="visual-track second"></div><div class="visual-node"></div></div><span class="visual-bottom">CONTROL · DRIFT</span></div>
+            <div class="paper-details">
+              <div class="paper-meta"><span class="paper-venue">IEEE TDSC 2026</span><span class="paper-contribution" data-i18n="firstAuthor">First author</span></div>
+              <h3>CCDP: Counterfactual Control Drift Patch for Vision-Language-Action Models</h3>
+              <p class="paper-authors"><strong>Qi Guo</strong> et al.</p>
+              <p class="paper-summary" data-i18n="paperCCDPDesc">A universal adversarial patch designed to induce instruction-conditioned control-relevant representation drift in VLA models.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="paper-thumbnail visual-diffusion" aria-hidden="true"><span class="visual-top">VLM / DIFFUSION</span><div class="visual-central"><div class="visual-sphere a"></div><div class="visual-sphere b"></div><div class="visual-sphere c"></div></div><span class="visual-bottom">TRANSFER · ATTACK</span></div>
+            <div class="paper-details">
+              <div class="paper-meta"><span class="paper-venue">IEEE TIFS 2025</span><span class="paper-contribution" data-i18n="firstAuthor">First author</span></div>
+              <h3>AdvDiffVLM: Efficient Generation of Targeted and Transferable Adversarial Examples for Vision-Language Models via Diffusion Models</h3>
+              <p class="paper-authors"><strong>Qi Guo</strong>, Shanmin Pang, Xiaojun Jia, Yang Liu, Qing Guo.</p>
+              <p class="paper-summary" data-i18n="paperAdvDesc">Diffusion-driven targeted transfer attacks with adaptive gradient estimation and spatial guidance for efficient, natural-looking adversarial examples.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1109/TIFS.2024.3518072" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://arxiv.org/abs/2404.10335" target="_blank" rel="noopener noreferrer">arXiv ↗</a><a href="https://github.com/gq-max/AdvDiffVLM" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="paper-thumbnail visual-personalq" aria-hidden="true"><span class="visual-top">GENERATION / SYSTEMS</span><div class="visual-central"><div class="visual-stack one"></div><div class="visual-stack two"></div><div class="visual-stack three"></div></div><span class="visual-bottom">SELECT · QUANTIZE</span></div>
+            <div class="paper-details">
+              <div class="paper-meta"><span class="paper-venue">ICME 2026 · Oral</span><span class="paper-contribution" data-i18n="coFirstAuthor">Co-first author</span></div>
+              <h3>PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference</h3>
+              <p class="paper-authors">Qirui Wang, <strong>Qi Guo</strong> et al.</p>
+              <p class="paper-summary" data-i18n="paperPersonalDesc">Model selection, quantization, and efficient serving for personalized diffusion-based generation.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2603.22943" target="_blank" rel="noopener noreferrer">arXiv ↗</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="paper-thumbnail visual-deepfake" aria-hidden="true"><span class="visual-top">VISION / PROTECTION</span><div class="visual-central"><div class="visual-face"></div><div class="visual-scan"></div></div><span class="visual-bottom">ROBUST · DEFENSE</span></div>
+            <div class="paper-details">
+              <div class="paper-meta"><span class="paper-venue">Neurocomputing 2025</span><span class="paper-contribution" data-i18n="firstAuthor">First author</span></div>
+              <h3>Towards Robust DeepFake Distortion Attack via Adversarial Autoaugment</h3>
+              <p class="paper-authors"><strong>Qi Guo</strong>, Shanmin Pang, Zhikai Chen, Qing Guo.</p>
+              <p class="paper-summary" data-i18n="paperRDDADesc">Adversarial auto-augmentation to improve the robustness of proactive image protection against DeepFake manipulation.</p>
+            </div>
+          </article>
+        </div>
+        <div class="ongoing-note"><span class="ongoing-label" data-i18n="ongoingLabel">ONGOING WORK</span><p data-i18n="ongoingDesc">Current manuscripts include ChainCog-Bench, KSTF-Attack, OmniSafeBench-MM, and DTBBA. These are listed as under review rather than peer-reviewed publications.</p></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">03 / <span data-i18n="projectsKicker">PROJECTS</span></span><h2 id="projects-title" data-i18n="projectsTitle">Selected research projects<span class="headline-period">.</span></h2></div>
+          <p class="section-intro" data-i18n="projectsIntro">From fine-grained behavioral reasoning benchmarks to adversarial evaluation and multimodal model adaptation.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-type" data-i18n="projectBenchmark">BENCHMARK</span><span class="project-index">01</span></div>
+            <h3>ChainCog-Bench</h3>
+            <p data-i18n="projectChainDesc">A four-level visual cognition chain—from atomic visual cues to behavior, temporal dynamics, and personality assessment—for diagnosing MLLM understanding.</p>
+            <div class="project-metrics"><span><strong>1,201</strong><small data-i18n="metricVideos">videos</small></span><span><strong>12,781</strong><small data-i18n="metricQuestions">questions</small></span><span><strong>22</strong><small data-i18n="metricModels">models</small></span></div>
+            <div class="project-footer"><span>Human-Centric AI · MLLM</span><span class="project-status" data-i18n="underReview">Under review</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-type" data-i18n="projectAttack">ADVERSARIAL RESEARCH</span><span class="project-index">02</span></div>
+            <h3>KSTF-Attack</h3>
+            <p data-i18n="projectKSTFDesc">Keyframe-driven transferable attacks on video MLLMs under unknown victim frame sampling, with temporal alignment and frequency-aware gradient optimization.</p>
+            <div class="project-technical"><span>Video MLLM</span><span>Temporal alignment</span><span>3D-DCT</span></div>
+            <div class="project-footer"><span>Video · Robustness</span><span class="project-status" data-i18n="underReview">Under review</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-type" data-i18n="projectEvaluation">SAFETY EVALUATION</span><span class="project-index">03</span></div>
+            <h3>OmniSafeBench-MM</h3>
+            <p data-i18n="projectOmniDesc">A unified evaluation toolbox for multimodal jailbreak attacks and defenses, spanning diverse attack families, defensive strategies, risk domains, and models.</p>
+            <div class="project-metrics"><span><strong>13</strong><small data-i18n="metricAttacks">attack families</small></span><span><strong>15</strong><small data-i18n="metricDefenses">defenses</small></span><span><strong>18</strong><small data-i18n="metricModels">models</small></span></div>
+            <div class="project-footer"><span class="project-link-wrap"><a href="https://arxiv.org/abs/2512.06589" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/jiaxiaojunQAQ/OmniSafeBench-MM" target="_blank" rel="noopener noreferrer">Code ↗</a></span><span class="project-status" data-i18n="underReview">Under review</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-type" data-i18n="projectPostTrain">POST-TRAINING</span><span class="project-index">04</span></div>
+            <h3 data-i18n="projectSkillTitle">Multimodal Skill Auditing</h3>
+            <p data-i18n="projectSkillDesc">Research on auditing malicious instructions hidden across skill files, code, and images, with triage-based model routing and QLoRA / SFT / GRPO post-training.</p>
+            <div class="project-technical"><span>Qwen3-VL</span><span>QLoRA</span><span>GRPO</span></div>
+            <div class="project-footer"><span>Security · Model Alignment</span><span class="project-status" data-i18n="researchProject">Research project</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section background-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">04 / <span data-i18n="experienceKicker">BACKGROUND</span></span><h2 id="experience-title" data-i18n="experienceTitle">Research experience<span class="headline-period">.</span></h2></div>
+          <p class="section-intro" data-i18n="experienceIntro">Research collaborations across academia and industry, connecting fundamental questions with large-scale multimodal systems.</p>
+        </div>
+        <div class="background-grid">
+          <div>
+            <h3 class="subsection-title" data-i18n="internshipsTitle">Research internships</h3>
+            <div class="timeline">
+              <article class="timeline-entry"><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-content"><div class="timeline-heading"><h4>Ant Group</h4><span>2026.05 — <span data-i18n="present">Present</span></span></div><p class="timeline-position" data-i18n="roleAnt">Research Intern · Multimodal Understanding &amp; Interaction</p><p data-i18n="descAnt">Human-centric MLLM evaluation, ChainCog-Bench, and Qwen3-VL post-training for targeted multimodal capabilities.</p><span class="timeline-location" data-i18n="locationBeijing">Beijing, China</span></div></article>
+              <article class="timeline-entry"><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-content"><div class="timeline-heading"><h4>BraneMatrix AI</h4><span>2025.09 — 2026.05</span></div><p class="timeline-position" data-i18n="roleBrane">Research Intern · Multimodal AI Safety</p><p data-i18n="descBrane">OmniSafeBench-MM attack–defense infrastructure, unified evaluation tools, and multimodal Agent Skill auditing.</p><span class="timeline-location" data-i18n="locationShanghai">Shanghai, China</span></div></article>
+              <article class="timeline-entry"><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-content"><div class="timeline-heading"><h4>CFAR, A*STAR</h4><span>2024.11 — 2025.10</span></div><p class="timeline-position" data-i18n="roleAStar">Research Intern · Multimodal Model Safety</p><p data-i18n="descAStar">PhysPatch: physically realizable and transferable adversarial patches for driving-oriented multimodal language models.</p><span class="timeline-location" data-i18n="locationSingapore">Singapore</span></div></article>
+            </div>
+          </div>
+          <aside class="background-aside">
+            <div class="education-card">
+              <h3 class="subsection-title" data-i18n="educationTitle">Education</h3>
+              <div class="edu-item"><span class="edu-years">2021 — 2027 <span data-i18n="expected"> (expected)</span></span><h4 data-i18n="eduPhdTitle">Ph.D. in Computer Science &amp; Technology</h4><p data-i18n="eduPhdSchool">Xi'an Jiaotong University</p><small data-i18n="eduAdvisor">Advisor: Prof. Shanmin Pang</small></div>
+              <div class="edu-item"><span class="edu-years">2017 — 2021</span><h4 data-i18n="eduBachelorTitle">B.Eng. in Software Engineering</h4><p data-i18n="eduBachelorSchool">Xi'an Jiaotong University</p></div>
+            </div>
+            <div class="honors-card">
+              <h3 class="subsection-title" data-i18n="honorsTitle">Selected honors</h3>
+              <p data-i18n="honorsDescription">First-class Academic Scholarship · Outstanding Graduate Student · National Third Prize in the China Undergraduate Mathematical Contest in Modeling</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner"><div><span class="section-kicker">05 / <span data-i18n="contactKicker">CONTACT</span></span><h2 id="contact-title" data-i18n="contactTitle">Let's connect<span class="headline-period">.</span></h2><p data-i18n="contactDescription">I welcome conversations about multimodal research, academic collaboration, and 2027 research or algorithm engineering opportunities.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:gq19990314@stu.xjtu.edu.cn">gq19990314@stu.xjtu.edu.cn <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/gq-max/" target="_blank" rel="noopener noreferrer">github.com/gq-max ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Qi Guo · 郭淇</span><span data-i18n="footerNote">Built for research, ideas, and open collaboration.</span><a href="#top" data-i18n="backToTop">Back to top ↑</a></div></footer>
 </body>
-
 </html>
