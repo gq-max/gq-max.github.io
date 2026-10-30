@@ -474,3 +474,29 @@ footer a:hover {
     padding-right: 0.5rem;
     transition: background 0.2s ease;
 }
+
+
+/* Resume refresh: research-focused responsive cards */
+.intro-card{padding:1.6rem 1.8rem;background:rgba(255,255,255,.92);border:1px solid rgba(37,99,235,.12);border-radius:16px;box-shadow:0 14px 38px rgba(30,41,59,.045)}
+.intro-lead{font-size:1.12rem;color:var(--text-primary)}
+.publication-list,.experience-list{display:flex;flex-direction:column;gap:1rem}
+.publication-entry,.experience-entry{background:rgba(255,255,255,.9);border:1px solid #e2e8f0;border-radius:14px;padding:1.25rem 1.5rem}
+.publication-entry{border-left:3px solid #3b82f6}
+.publication-entry h4{font-size:1.04rem;line-height:1.55;color:#17253a;font-weight:650;margin:.35rem 0 .55rem}
+.publication-entry p,.experience-entry li{font-size:.94rem;line-height:1.7}
+.publication-meta{display:flex;gap:.5rem;flex-wrap:wrap}
+.publication-venue,.publication-role{font-size:.78rem;font-weight:600;padding:.2rem .65rem;border-radius:20px;background:#eff6ff;color:#1d4ed8}
+.publication-role{background:#f1f5f9;color:#475569}
+.publication-links{display:flex;gap:.6rem;flex-wrap:wrap}
+.publication-links a{font-size:.85rem;font-weight:600;padding:.2rem .65rem;border:1px solid #dbeafe;border-radius:8px;background:#f8fbff}
+.research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.research-card{padding:1.35rem;background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 12px 35px rgba(30,41,59,.035)}
+.research-card h4{font-size:1.05rem;color:#1e293b;margin:0 0 .65rem}
+.research-card p{font-size:.94rem;line-height:1.7}
+.research-card .research-facts{color:#1d4ed8;font-weight:600}
+.research-card .research-tags{font-size:.82rem;color:#64748b}
+.experience-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem}
+.experience-entry h3{border:0;padding:0;margin:0;font-size:1.1rem;color:#1e293b}
+.experience-top span{font-family:var(--font-mono);font-size:.82rem;color:#64748b}
+.experience-role{color:#2563eb;font-weight:600;margin:.2rem 0 .6rem}
+@media(max-width:768px){.research-grid{grid-template-columns:1fr}.intro-card,.publication-entry,.experience-entry,.research-card{padding:1.05rem}}
