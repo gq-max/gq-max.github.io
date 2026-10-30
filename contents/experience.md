@@ -1,35 +1,21 @@
-### **BraneMatrix AI（上海，实习）｜大模型安全研究实习生**
-**2025.10 - 至今**
-
-- 参与构建 OmniSafeBench-MM：多模态越狱攻击-防御统一评测基准。
-- 负责多种 jailbreak 攻击算法的实现与集成，统一闭源 API 与开源 VLM 接口。
-- 构建批量推理、自动评测与日志统计工具链，显著提升 benchmark 的可复现性与扩展性。
-- 成果位于 arXiv：*OmniSafeBench-MM: A Unified Benchmark and Toolbox for Multimodal Jailbreak Attack-Defense Evaluation*（共同一作）。
+### Ant Group · 蚂蚁集团（北京）｜大模型理解与交互研究实习生
+**2026.05 – 至今**
+- 参与构建 **ChainCog-Bench**，建立“原子视觉线索—行为语义—时序动态—人格画像”的四级视觉认知链。
+- 参与建设覆盖 **1,201 段视频、18,015 帧、12,781 个问题及 22 个模型** 的分层评测与受控信息注入体系。
+- 面向模型薄弱能力，设计 **Qwen3-VL-8B** 的 QLoRA、SFT / GRPO 后训练方案，涉及数据治理、奖励设计、能力保持与消融评估。
 
 ---
 
-### **CFAR, A*STAR（新加坡，CSC交流）｜大模型安全研究实习生**
-**2024.11 - 2025.10**
-
-- 研究 MLLM 在自动驾驶场景下的物理世界对抗鲁棒性与安全风险。
-- 提出 PhysPatch，利用大语言模型的空间理解能力和特征对齐损失，实现对 MLLM 自动驾驶系统物理防护部署、跨模型可迁移的对抗贴片攻击。
-- 在多种 MLLM 自动驾驶系统上验证有效性，成果发表于 **AAAI 2026（CCF A）**。
-- 论文：*Physpatch: A physically realizable and transferable adversarial patch attack for multimodal large language models-based autonomous driving systems*。
+### BraneMatrix AI（上海）｜大模型安全研究实习生
+**2025.09 – 2026.05**
+- 参与构建 **OmniSafeBench-MM**，集成 13 类攻击、15 类防御，覆盖 9 个风险域、50 个细粒度类别及 18 个开源／闭源 MLLM。
+- 负责统一模型推理接口、闭源 API 接入、批量任务调度、自动安全评测与日志统计工具链。
+- 面向跨文件、代码和图像中的恶意指令，设计 Agent Skill 三路由判定机制与 QLoRA SFT / GRPO 后训练及安全—效用评测方案。
 
 ---
 
-### **针对 MLLM 的可迁移对抗攻击研究｜IEEE TIFS（中科院一区，CCF-A）**
-**2023.11 - 2024.10**
-
-- 研究通用 MLLM 的可迁移对抗样本生成方法。
-- 提出基于扩散模型与分数匹配的高效目标对抗样本生成框架，在迁移性与生成效率上显著优于基线。
-- 论文：*Efficient generation of targeted and transferable adversarial examples for vision-language models via diffusion models*。
-
----
-
-### **使用对抗样本防御 DeepFake｜Neurocomputing（中科院二区）**
-**2022.10 - 2023.10**
-
-- 研究如何提升对抗样本针对各种防御方法的抵抗能力，从而更好保护人脸图免受深度伪造。
-- 提出结合对抗学习与强化学习的策略，帮助对抗样本学习更难防御的攻击情形，增强其对更难得和未知对抗样本的抵抗能力。
-- 论文：*Towards Robust DeepFake Distortion Attack via Adversarial Autoaugment*。
+### CFAR, A*STAR（新加坡）｜大模型安全研究实习生
+**2024.11 – 2025.10**
+- 提出 **PhysPatch**，研究面向自动驾驶 MLLM 的物理可部署、跨模型可迁移目标对抗贴片。
+- 联合优化贴片位置、形状与内容，引入语义选址、SVD 局部语义对齐、Patch-guided Crop-Resize 与势场形状更新。
+- 在开源、商业及推理型自动驾驶 MLLM 上完成数字与物理场景评测；成果发表于 **AAAI 2026**，代码已开源。
