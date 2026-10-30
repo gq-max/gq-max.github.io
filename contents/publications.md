@@ -1,6 +1,6 @@
 ### 已发表 · Published
 
-* **Qi Guo**, Shanmin Pang, Xiaojun Jia, Qing Guo. “AdvDiffVLM: Efficient Generation of Targeted and Transferable Adversarial Examples for Vision-Language Models via Diffusion Models.” **IEEE TIFS, 2025**. [Paper](https://doi.org/10.1109/TIFS.2024.3518072) · [arXiv](https://arxiv.org/abs/2404.10335) · [Code](https://github.com/gq-max/AdvDiffVLM)
+* **Qi Guo**, Shanmin Pang, Xiaojun Jia, Yang Liu, Qing Guo. “AdvDiffVLM: Efficient Generation of Targeted and Transferable Adversarial Examples for Vision-Language Models via Diffusion Models.” **IEEE TIFS, 2025**. [Paper](https://doi.org/10.1109/TIFS.2024.3518072) · [arXiv](https://arxiv.org/abs/2404.10335) · [Code](https://github.com/gq-max/AdvDiffVLM)
 * **Qi Guo**, Xiaojun Jia, Shanmin Pang, Simeng Qin, Lin Wang, Ju Jia, Yang Liu, Qing Guo. “PhysPatch: A Physically Realizable and Transferable Adversarial Patch Attack for Multimodal Large Language Models-based Autonomous Driving Systems.” **AAAI, 2026**. [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/42439) · [arXiv](https://arxiv.org/abs/2508.05167) · [Code](https://github.com/gq-max/physpatch)
 * **Qi Guo**, Shanmin Pang, Zhikai Chen, Qing Guo. “Towards Robust DeepFake Distortion Attack via Adversarial Autoaugment.” **Neurocomputing, 2025**.
 * Qirui Wang, **Qi Guo**, Yiding Sun, Junkai Yang, Dongxu Zhang, Shanmin Pang, Qing Guo. “PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference.” **ICME, 2026 (Oral)**. [Paper](https://arxiv.org/abs/2603.22943)
